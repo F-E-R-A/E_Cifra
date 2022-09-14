@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="Main_Cadastro">
+        <div class="Cadastrar_Geral">
+            <div class="Dados_Pessoais">
+                <div class="field_1">
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <div class="name_">
+                            <label id="label-name_" for="name_">Nome:</label>
+                            <input id="name_" name="name_" type="text" placeholder="Seu nome..."><br/>
+                        </div>
+
+                        <div class="Block_1">
+                            <div class="User_">
+                                <p id="user_">Apelido:</p>
+                                <input type="text" placeholder="Seu usuário/apelido..."><br/>  
+                            </div>
+
+                            <div class="Sex_">
+                                <p id="sex_">Sexo:</p>
+                                <select id="sex_">
+                                    <option value="Feminino">Feminino</option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Não informar">Não informar</option>
+                                </select><br/>
+                            </div>
+                        </div>
+                        <div class="Block_2">
+                            <div class="cpf_">
+                                <p id="cpf_">CPF:</p>
+                                <input type="text" placeholder="CPF"><br/>
+                            </div>
+
+                            <div class="nasc_">
+                                <p id="nasc_">Nascimento:</p>
+                                <input id="nasc_" name="nasc_" type="date">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="field_2">
+                    <fieldset>
+                        <legend>Contato</legend>
+                        <div class="Block_3">
+                            <div class="email_">
+                                <p id="email_">E-mail:</p>    
+                                <input id="email_" name="email_" type="email" placeholder="seuemail@aqui.com"><br/><br/>
+                            </div> 
+    
+                            <div class="rec_email_">    
+                                <p id="rec_email_">Recuperação:</p>
+                                <input type="email" placeholder="recuperação@aqui.com">
+                            </div>
+                        </div>
+
+                        <div class="Block_4">
+                            <div class="Tel_">
+                                <p id="Tel_">Telefone:</p>
+                                <select id="area_">
+                                    <option value="+55">+55 - Br</option>
+                                    <option value="+93">+93 - Af</option>
+                                    <option value="+27">+27 - As</option>
+                                    <option value="+244">+244 - Ag</option>
+                                </select>
+                                <input id="tel_" name="tel_" type="tel" placeholder="(33) 98888-8888"><br/><br/>
+                            </div>
+                            <div class="Social_">
+                                <p>Rede_Social:</p>
+                                <input type="text" placeholder="Facebook/Instagram">
+                            </div>
+                        </div>    
+                    </fieldset>
+                </div>
+                <div class="field_3">
+                    <fieldset>
+                        <legend>Segurança</legend>
+
+                        <div class="Key_1">
+                            <p>Senha:</p>
+                            <input type="password" placeholder="Senha">
+                        </div>
+                        <div class="Key_repeat">
+                            <p>Repetir_Senha:</p>
+                            <input type="password" placeholder="Repetir senha">
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,397 @@
+/*==========================================*/
+/*  Login  */
+body{
+    margin: 0 auto;
+}
+.Main_{
+    background-image: url("Images/Background_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.Left_Logo{
+    /*background-color: aquamarine;*/
+    width: 100%;
+    position: relative;
+}
+.Login_Geral{
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: 15px 15px 30px black;
+    border-radius: 25px;
+    padding: 50px;
+    border: 0 auto;
+    height: 550px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.Login_Geral h1{
+    margin-top: -16px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+.Login_Geral .Login_{
+    margin-top: 40px;
+}
+.Login_Geral .Login_ h2{
+    border: 1px solid white;
+    width: calc(100% / 2);
+    margin-left: calc((100% / 4) - 20px);
+    margin-top: -15px;
+    padding: 0px 20px;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+.Login_Geral .Login_ input{
+    border-radius: 5px;
+    padding-left: 40px;
+    width: calc(100% - 40px);
+    border: none;
+    height: 29px;
+}
+.Login_Geral .Login_ #IMP_1{
+    background-image: url("Images/user.png");
+    background-repeat: no-repeat;
+    background-position: 10px 7px;
+}
+.Login_Geral .Login_ #IMP_2{
+    background-image: url("Images/key.png");
+    background-repeat: no-repeat;
+    background-position: 10px 7px;
+}
+.Login_Geral .Login_ input:focus{
+    box-shadow: 0 0 30px aqua;
+}
+.Login_Geral .Login_ button{
+    background-color: rgb(22, 164, 247);
+    color: white;
+    border: none;
+    width: calc(100% / 2);
+    text-align: center;
+    margin-left: calc(100% / 4);
+    height: 30px;
+    border-radius: 15px;
+}
+.Login_Geral .Login_ button:hover{
+    background-color: aqua;
+    color: black;
+    box-shadow: 0 0 30px aqua;
+}
+.Login_Geral .Login_ button:focus{
+    box-shadow: 0 0 30px aqua;
+}
+
+
+.Cadastrar_{
+    margin-top: 30px;
+    border: 1px solid white;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 5px 20px 5px 20px;
+}
+.Cadastrar_ p{
+    color: white;
+}
+.Cadastrar_ a{
+    color:rgb(22, 164, 247);
+    text-decoration: none;
+}
+.Cadastrar_ a:hover{
+    color: aqua;
+}
+
+
+
+.Stores_{
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+}
+.Stores_ a img{
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+}
+.Stores_ a img:hover{
+    box-shadow: 2px 2px 10px aqua;
+}
+
+
+
+
+@media (min-width: 1100px){
+    .Login_Geral{
+        margin: 5% 10vw;
+    }
+}
+@media (max-width: 1099px){
+    .Login_Geral{
+        margin: 10vw auto;
+    }
+}
+@media (max-width: 500px){
+    .Login_Geral{
+        width: 170px;
+        height: 450px;
+    }
+    .Login_Geral h1{
+        margin-bottom: 5px;
+    }
+    .Login_ h2{
+        font-size: 14px;
+    }
+    .Login_ input{
+        height: 24px;
+    }
+    .Cadastrar_ a, .Cadastrar_ p{
+        font-size: 12px;
+    }
+    .Stores_ a, .Stores_ p{
+        font-size: 13px;
+    }
+    .Stores_ a img{
+        height: 25px;
+        width: 82px;
+    }
+}
+@media (max-height: 750px) and (min-width: 750px){
+    .Login_Geral{
+        width: 250px;
+        height: 400px;
+        margin: 5vw auto;
+    }
+    .Login_Geral h1{
+        margin-bottom: 5px;
+    }
+    .Cadastrar_{
+        margin-top: 10px;
+    }
+    .Cadastrar_ a, .Cadastrar_ p{
+        font-size: 12px;
+    }
+    .Stores_{
+        margin-top: 1px;
+    }
+    .Stores_ a, .Stores_ p{
+        font-size: 12px;
+    }
+}
+
+/*========================================*/
+/*   Página de Cadastro Users   */
+
+
+
+.Main_Cadastro{
+    background-image: url("Images/Background_3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+
+}
+.Cadastrar_Geral{
+    background-color: rgb(102, 74, 48);
+    border-radius: 30px;
+    width: calc(85vw - 80px);
+    max-width: 800px;
+    height: 70vh;
+    margin: 10vw auto;
+    margin: 10vh auto;
+    padding: 40px;
+    color: rgb(209, 206, 206);
+}
+
+
+/*Field_1*/
+.Dados_Pessoais .field_1{
+    display: flex;
+    flex-direction: column;
+}
+
+.Dados_Pessoais .field_1 fieldset .name_{
+    display: flex;
+    flex-direction: row;
+    padding: 20px 30px;
+}
+.Dados_Pessoais .field_1 fieldset .name_ input{
+    width: calc((100% - 155px) + 100px);
+    display: flex;
+    align-self: flex-end;
+    margin-left: 5px;
+}
+
+    /*Bloco 1*/
+.Dados_Pessoais .field_1 fieldset .Block_1{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 30px;
+}
+.Dados_Pessoais .field_1 fieldset .Block_1 .User_{
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.Dados_Pessoais .field_1 fieldset .Block_1 .User_ input{
+    width: calc(100% + 300px);
+    margin-left: 5px;
+}
+.Dados_Pessoais .field_1 fieldset .Block_1 .Sex_{
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+.Dados_Pessoais .field_1 fieldset .Block_1 .Sex_ select{
+    margin-left: 5px;
+}
+
+    /*Bloco 2*/
+.Dados_Pessoais .field_1 fieldset .Block_2{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 30px;
+}
+.Dados_Pessoais .field_1 fieldset .Block_2 .cpf_{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.Dados_Pessoais .field_1 fieldset .Block_2 .cpf_ input{
+    margin-left: 5px;
+}
+.Dados_Pessoais .field_1 fieldset .Block_2 .nasc_{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.Dados_Pessoais .field_1 fieldset .Block_2 .nasc_ input{
+    margin-left: 5px;
+}
+
+/*Field_2*/
+.Dados_Pessoais .field_2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+    /*Block_3*/
+.Dados_Pessoais .field_2 fieldset .Block_3{
+    display: flex;
+    flex-direction: row;
+    padding: 0 30px;
+    width: 100%;
+}
+.Dados_Pessoais .field_2 fieldset .Block_3 .email_{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.Dados_Pessoais .field_2 fieldset .Block_3 .email_ input{
+    width: calc(100% - 100px);
+    margin-left: 5px;
+}
+.Dados_Pessoais .field_2 fieldset .Block_3 .rec_email_{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.Dados_Pessoais .field_2 fieldset .Block_3 .rec_email_ input{
+    width: calc(100% - 160px);
+    margin-left: 5px;
+}
+
+    /*Block_4*/
+.Dados_Pessoais .field_2 .Block_4{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.Dados_Pessoais .field_2 fieldset .Block_4 .Tel_{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 30px;
+}
+.Dados_Pessoais .field_2 fieldset .Block_4 .Tel_ select{
+    margin-left: 5px;
+}
+.Dados_Pessoais .field_2 fieldset .Block_4 .Tel_ input{
+    margin-left: 5px;
+}
+
+.Dados_Pessoais .field_2 .Block_4 .Social_{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.Dados_Pessoais .field_2 .Block_4 .Social_ input{
+    margin-left: 5px;
+    width: calc(100% - 130px);
+}
+
+
+/*Field_3*/
+.Dados_Pessoais .field_3{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.Dados_Pessoais .field_3 fieldset .Key_1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 30px;
+}
+.Dados_Pessoais .field_3 fieldset .Key_1 input{
+    margin-left: 5px;
+}
+
+.Dados_Pessoais .field_3 fieldset .Key_repeat{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 30px;
+}
+.Dados_Pessoais .field_3 fieldset .Key_repeat input{
+    margin-left: 5px;
+}
+
+
+
+
+/* Teste
+.W{
+    background-color: blanchedalmond;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.S{
+    background-color: brown;
+    color: white;
+    width: 400px;
+    height: 350px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: row;
+}*/
