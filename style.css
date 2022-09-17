@@ -192,7 +192,7 @@ body{
     background-image: url("Images/Background_3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
     display: flex;
 
@@ -202,7 +202,7 @@ body{
     border-radius: 30px;
     width: calc(85vw - 80px);
     max-width: 800px;
-    height: 75vh;
+    max-height: 600px;
     margin: 10vw auto;
     margin: 10vh auto;
     padding: 40px;
@@ -394,9 +394,43 @@ body{
     align-items: flex-start;
     padding-top: 32px;
     padding-left: 5px;
-
 }
 
+/*Botões*/
+.Dados_Pessoais .buttons{
+    width: 100%;
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-around;
+}
+.Dados_Pessoais .buttons a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+.Dados_Pessoais .buttons #Link_Back{
+    background-color: brown;
+}
+.Dados_Pessoais .buttons #Link_Back:hover{
+    background-color: rgb(241, 62, 62);
+}
+
+.Dados_Pessoais .buttons #Link_Sobre{
+    background-color: burlywood;
+}
+.Dados_Pessoais .buttons #Link_Sobre:hover{
+    background-color: rgb(253, 186, 84);
+}
+
+.Dados_Pessoais .buttons #Link_go{
+    background-color: rgb(55, 175, 55);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.Dados_Pessoais .buttons #Link_go:hover{
+    background-color: rgb(2, 136, 2);
+}
 
 /* Teste
 .W{
