@@ -5,7 +5,7 @@ body{
 }
 .Main_{
     background-image: url("Images/Background_2.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
     position: relative;
     height: 100vh;
@@ -183,11 +183,10 @@ body{
     }
 }
 
+
+
 /*========================================*/
 /*   Página de Cadastro Users   */
-
-
-
 .Main_Cadastro{
     background-image: url("Images/Background_3.jpg");
     background-repeat: no-repeat;
@@ -195,10 +194,9 @@ body{
     height: 120vh;
     width: 100vw;
     display: flex;
-
 }
 .Cadastrar_Geral{
-    background-color: rgb(102, 74, 48);
+    background-color: rgb(158, 84, 15);
     border-radius: 30px;
     width: calc(85vw - 80px);
     max-width: 800px;
@@ -206,9 +204,16 @@ body{
     margin: 10vw auto;
     margin: 10vh auto;
     padding: 40px;
-    color: rgb(209, 206, 206);
+    color: white;
 }
-
+@media (max-width: 845px){
+    .Cadastrar_Geral{
+        width: 320px;
+        padding: 8px 5px;
+        margin: 3vw auto;
+        margin: 3vh auto;
+    }
+}
 
 /*Field_1*/
 .Dados_Pessoais .field_1{
@@ -279,6 +284,33 @@ body{
 .Dados_Pessoais .field_1 fieldset .Block_2 .nasc_ input{
     margin-left: 5px;
 }
+@media (max-width: 845px){
+    /*.Main_{
+        height: 200vh;
+    }*/
+    .Dados_Pessoais .field_1 fieldset .Block_1{
+        flex-direction: column;
+        padding: 8px;
+    }
+    .Dados_Pessoais .field_1 fieldset .Block_1 .User_{
+        width: 100%;
+    }
+    .Dados_Pessoais .field_1 fieldset .Block_1 .Sex_{
+        width: 100%;
+    }
+    .Dados_Pessoais .field_1 fieldset .Block_2{
+        flex-direction:  column;
+        padding: 8px;
+    }
+    .Dados_Pessoais .field_1 fieldset .Block_2 .cpf_{
+        width: 100%;
+    }
+    .Dados_Pessoais .field_1 fieldset .Block_2 .nasc_{
+        width: 100%;
+    }
+}
+
+
 
 /*Field_2*/
 .Dados_Pessoais .field_2{
@@ -289,7 +321,7 @@ body{
     /*Block_3*/
 .Dados_Pessoais .field_2 fieldset .Block_3{
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     padding: 0 30px;
     width: 100%;
 }
@@ -315,7 +347,7 @@ body{
 }
 
     /*Block_4*/
-.Dados_Pessoais .field_2 .Block_4{
+.Dados_Pessoais .field_2 fieldset .Block_4{
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -335,22 +367,50 @@ body{
     margin-left: 5px;
 }
 
-.Dados_Pessoais .field_2 .Block_4 .Social_{
+.Dados_Pessoais .field_2 fieldset .Block_4 .Social_{
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
-.Dados_Pessoais .field_2 .Block_4 .Social_ input{
+.Dados_Pessoais .field_2 fieldset .Block_4 .Social_ input{
     margin-left: 5px;
     width: calc(100% - 130px);
 }
+@media (max-width: 845px){
+    .Dados_Pessoais .field_2 fieldset .Block_3{
+        flex-direction: column;
+        padding: 8px;
+    }
+    /*.Dados_Pessoais .field_2 fieldset .Block_3 .email_{
+        width: 100%;
+    }*/
+    .Dados_Pessoais .field_2 fieldset .Block_4{
+        flex-direction: column;
+        padding: 8px;
+    }
+    .Dados_Pessoais .field_2 fieldset .Block_3 .email_{
+        width: 100%;
+    }
+    .Dados_Pessoais .field_2 fieldset .Block_3 .rec_email_{
+        width: 100%;
+    }
+    .Dados_Pessoais .field_2 fieldset .Block_4 .Tel_{
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+    .Dados_Pessoais .field_2 fieldset .Block_4 .Social_{
+        width: 100%;
+    }
+}
+
 
 
 /*Field_3*/
 .Dados_Pessoais .field_3 fieldset{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     margin-top: 10px;
 }
 .Dados_Pessoais .field_3 fieldset .Key_1{
