@@ -7,10 +7,12 @@ body{
     background-image: url("Images/Background_2.jpg");
     background-repeat: repeat-y;
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
     height: 100vh;
     width: 100vw;
     display: flex;
+    align-items: center;
 }
 
 .Left_Logo{
@@ -22,7 +24,7 @@ body{
     background-color: rgba(0,0,0,0.8);
     box-shadow: 15px 15px 30px black;
     border-radius: 25px;
-    padding: 50px;
+    padding: 40px;
     border: 0 auto;
     height: 550px;
     width: 250px;
@@ -53,7 +55,7 @@ body{
     padding-left: 40px;
     width: calc(100% - 40px);
     border: none;
-    height: 29px;
+    height: 32px;
 }
 .Login_Geral .Login_ #IMP_1{
     background-image: url("Images/user.png");
@@ -72,9 +74,8 @@ body{
     background-color: rgb(22, 164, 247);
     color: white;
     border: none;
-    width: calc(100% / 2);
+    width: 100%;
     text-align: center;
-    margin-left: calc(100% / 4);
     height: 30px;
     border-radius: 15px;
 }
@@ -137,8 +138,8 @@ body{
 }
 @media (max-width: 500px){
     .Login_Geral{
-        width: 170px;
-        height: 450px;
+        width: 200px;
+        height: 460px;
     }
     .Login_Geral h1{
         margin-bottom: 5px;
@@ -191,16 +192,18 @@ body{
     background-image: url("Images/Background_3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 120vh;
+    background-attachment: fixed;
+    height: 100vh;
     width: 100vw;
     display: flex;
+    justify-content: center;
 }
 .Cadastrar_Geral{
     background-color: rgb(158, 84, 15);
     border-radius: 30px;
     width: calc(85vw - 80px);
     max-width: 800px;
-    max-height: 600px;
+    height: 560px;
     margin: 10vw auto;
     margin: 10vh auto;
     padding: 40px;
@@ -274,6 +277,7 @@ body{
 }
 .Dados_Pessoais .field_1 fieldset .Block_2 .cpf_ input{
     margin-left: 5px;
+    width: 100%;
 }
 .Dados_Pessoais .field_1 fieldset .Block_2 .nasc_{
     width: 50%;
@@ -285,28 +289,53 @@ body{
     margin-left: 5px;
 }
 @media (max-width: 845px){
-    /*.Main_{
-        height: 200vh;
-    }*/
+    .Main_Cadastro{
+        height: 130vh;
+    }
+    .Cadastrar_Geral{
+        border-radius: 0px;
+        height: 120vh;
+    }
+    .Dados_Pessoais .field_1 fieldset .name_{
+        display: flex;
+        justify-content: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
     .Dados_Pessoais .field_1 fieldset .Block_1{
         flex-direction: column;
-        padding: 8px;
+        padding: 0px;
     }
     .Dados_Pessoais .field_1 fieldset .Block_1 .User_{
         width: 100%;
     }
     .Dados_Pessoais .field_1 fieldset .Block_1 .Sex_{
         width: 100%;
+        display: flex;
+        justify-content: flex-start;
     }
     .Dados_Pessoais .field_1 fieldset .Block_2{
         flex-direction:  column;
-        padding: 8px;
+        padding: 0px;
+
     }
     .Dados_Pessoais .field_1 fieldset .Block_2 .cpf_{
         width: 100%;
+        padding: 0px;
+        display: flex;
+        justify-content: flex-start;
     }
     .Dados_Pessoais .field_1 fieldset .Block_2 .nasc_{
         width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .Dados_Pessoais .buttons{
+        flex-direction: column-reverse;
+    }
+    .Dados_Pessoais .buttons a{
+        margin: 5px 8px auto;
+        text-align: center;
     }
 }
 
@@ -392,13 +421,30 @@ body{
     .Dados_Pessoais .field_2 fieldset .Block_3 .email_{
         width: 100%;
     }
+    .Dados_Pessoais .field_2 fieldset .Block_3 .email_ input{
+        padding: 0px;
+        width: 77%;
+        justify-content: flex-start;
+    }
     .Dados_Pessoais .field_2 fieldset .Block_3 .rec_email_{
         width: 100%;
     }
-    .Dados_Pessoais .field_2 fieldset .Block_4 .Tel_{
-        flex-direction: column;
+    .Dados_Pessoais .field_2 fieldset .Block_3 .rec_email_ input{
         width: 100%;
-        align-items: flex-start;
+        margin-right: 8px;
+    }
+    .Dados_Pessoais .field_2 fieldset .Block_4 .Tel_{
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        padding: 0px;
+    }
+    .Dados_Pessoais .field_2 fieldset .Block_4 .Tel_ select{
+        width: 75px;
+    }
+    .Dados_Pessoais .field_2 fieldset .Block_4 .Tel_ input{
+        width: 100%;
+        margin-right: 8px;
     }
     .Dados_Pessoais .field_2 fieldset .Block_4 .Social_{
         width: 100%;
