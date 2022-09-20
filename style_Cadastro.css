@@ -1,0 +1,391 @@
+/*   Página de Cadastro Users   */
+body{
+    margin: 0 auto;
+}
+
+.Main_Cadastro{
+    background-image: url("Images/Background_3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.Cadastrar_Geral{
+    background-color: rgb(158, 84, 15);
+    border-radius: 30px;
+    width: calc(85vw - 80px);
+    max-width: 800px;
+    height: 560px;
+    margin: 10vw auto;
+    margin: 10vh auto;
+    padding: 40px;
+    color: white;
+}
+@media (max-width: 845px){
+    .Cadastrar_Geral{
+        width: 320px;
+        padding: 8px 5px;
+        margin: 3vw auto;
+        margin: 3vh auto;
+    }
+}
+
+/*Field_1*/
+.Dados_Pessoais .field_1{
+    display: flex;
+    flex-direction: column;
+}
+
+.Dados_Pessoais .field_1 fieldset .name_{
+    display: flex;
+    flex-direction: row;
+    padding: 20px 30px;
+}
+.Dados_Pessoais .field_1 fieldset .name_ input{
+    width: calc((100% - 155px) + 100px);
+    display: flex;
+    align-self: flex-end;
+    margin-left: 5px;
+}
+
+    /*Bloco 1*/
+.Dados_Pessoais .field_1 fieldset .Block_1{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 30px;
+}
+.Dados_Pessoais .field_1 fieldset .Block_1 .User_{
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.Dados_Pessoais .field_1 fieldset .Block_1 .User_ input{
+    width: calc(100% + 300px);
+    margin-left: 5px;
+}
+.Dados_Pessoais .field_1 fieldset .Block_1 .Sex_{
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+.Dados_Pessoais .field_1 fieldset .Block_1 .Sex_ select{
+    margin-left: 5px;
+}
+
+    /*Bloco 2*/
+.Dados_Pessoais .field_1 fieldset .Block_2{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 30px;
+}
+.Dados_Pessoais .field_1 fieldset .Block_2 .cpf_{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.Dados_Pessoais .field_1 fieldset .Block_2 .cpf_ input{
+    margin-left: 5px;
+    width: 100%;
+}
+.Dados_Pessoais .field_1 fieldset .Block_2 .nasc_{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.Dados_Pessoais .field_1 fieldset .Block_2 .nasc_ input{
+    margin-left: 5px;
+}
+@media (max-width: 845px){
+    .Main_Cadastro{
+        height: 130vh;
+    }
+    .Cadastrar_Geral{
+        border-radius: 0px;
+        height: 120vh;
+    }
+    .Dados_Pessoais .field_1 fieldset .name_{
+        display: flex;
+        justify-content: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .Dados_Pessoais .field_1 fieldset .Block_1{
+        flex-direction: column;
+        padding: 0px;
+    }
+    .Dados_Pessoais .field_1 fieldset .Block_1 .User_{
+        width: 100%;
+    }
+    .Dados_Pessoais .field_1 fieldset .Block_1 .Sex_{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .Dados_Pessoais .field_1 fieldset .Block_2{
+        flex-direction:  column;
+        padding: 0px;
+
+    }
+    .Dados_Pessoais .field_1 fieldset .Block_2 .cpf_{
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .Dados_Pessoais .field_1 fieldset .Block_2 .nasc_{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .Dados_Pessoais .buttons{
+        flex-direction: column-reverse;
+    }
+    .Dados_Pessoais .buttons a{
+        margin: 5px 8px auto;
+        text-align: center;
+    }
+}
+@media (max-width: 375px){
+    .Main_Cadastro{
+        height: 170vh;
+    }
+    .Cadastrar_Geral{
+        height: 140vh;
+    }
+}
+@media (min-height: 810px) and (max-height: 1000px){
+    .Main_Cadastro{
+        height: 150vh;
+    }
+    .Cadastrar_Geral{
+        height: 130vh;
+    }
+}
+
+
+
+
+
+
+/*Field_2*/
+.Dados_Pessoais .field_2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+    /*Block_3*/
+.Dados_Pessoais .field_2 fieldset .Block_3{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 30px;
+    width: 100%;
+}
+.Dados_Pessoais .field_2 fieldset .Block_3 .email_{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.Dados_Pessoais .field_2 fieldset .Block_3 .email_ input{
+    width: calc(100% - 100px);
+    margin-left: 5px;
+}
+.Dados_Pessoais .field_2 fieldset .Block_3 .rec_email_{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.Dados_Pessoais .field_2 fieldset .Block_3 .rec_email_ input{
+    width: calc(100% - 160px);
+    margin-left: 5px;
+}
+
+    /*Block_4*/
+.Dados_Pessoais .field_2 fieldset .Block_4{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.Dados_Pessoais .field_2 fieldset .Block_4 .Tel_{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 30px;
+}
+.Dados_Pessoais .field_2 fieldset .Block_4 .Tel_ select{
+    margin-left: 5px;
+}
+.Dados_Pessoais .field_2 fieldset .Block_4 .Tel_ input{
+    margin-left: 5px;
+}
+
+.Dados_Pessoais .field_2 fieldset .Block_4 .Social_{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.Dados_Pessoais .field_2 fieldset .Block_4 .Social_ input{
+    margin-left: 5px;
+    width: calc(100% - 130px);
+}
+@media (max-width: 845px){
+    .Dados_Pessoais .field_2 fieldset .Block_3{
+        flex-direction: column;
+        padding: 8px;
+    }
+    /*.Dados_Pessoais .field_2 fieldset .Block_3 .email_{
+        width: 100%;
+    }*/
+    .Dados_Pessoais .field_2 fieldset .Block_4{
+        flex-direction: column;
+        padding: 8px;
+    }
+    .Dados_Pessoais .field_2 fieldset .Block_3 .email_{
+        width: 100%;
+    }
+    .Dados_Pessoais .field_2 fieldset .Block_3 .email_ input{
+        padding: 0px;
+        width: 77%;
+        justify-content: flex-start;
+    }
+    .Dados_Pessoais .field_2 fieldset .Block_3 .rec_email_{
+        width: 100%;
+    }
+    .Dados_Pessoais .field_2 fieldset .Block_3 .rec_email_ input{
+        width: 100%;
+        margin-right: 8px;
+    }
+    .Dados_Pessoais .field_2 fieldset .Block_4 .Tel_{
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        padding: 0px;
+    }
+    .Dados_Pessoais .field_2 fieldset .Block_4 .Tel_ select{
+        width: 75px;
+    }
+    .Dados_Pessoais .field_2 fieldset .Block_4 .Tel_ input{
+        width: 100%;
+        margin-right: 8px;
+    }
+    .Dados_Pessoais .field_2 fieldset .Block_4 .Social_{
+        width: 100%;
+    }
+}
+
+
+
+/*Field_3*/
+.Dados_Pessoais .field_3 fieldset{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 10px;
+}
+.Dados_Pessoais .field_3 fieldset .Key_1{
+    margin-top: 5px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  
+}
+.Dados_Pessoais .field_3 fieldset .Key_1 p{
+    margin-top: 0px;
+    display: flex;
+    align-self: flex-end;
+    padding-left: 30px;
+}
+.Dados_Pessoais .field_3 fieldset .Key_1 input{
+    margin-left: 5px;
+}
+
+.Dados_Pessoais .field_3 fieldset .Key_repeat{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.Dados_Pessoais .field_3 fieldset .Key_repeat input{
+    margin-left: 5px;
+}
+.Dados_Pessoais .field_3 fieldset .Key_repeat #impPass_2{
+    margin-top: 14px;
+}
+
+.Dados_Pessoais .field_3 fieldset .aviso_1{
+    font-size: 12px;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 32px;
+    padding-left: 5px;
+}
+
+/*Botões*/
+.Dados_Pessoais .buttons{
+    width: 100%;
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-around;
+}
+.Dados_Pessoais .buttons a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+.Dados_Pessoais .buttons #Link_Back{
+    background-color: brown;
+}
+.Dados_Pessoais .buttons #Link_Back:hover{
+    background-color: rgb(241, 62, 62);
+}
+
+.Dados_Pessoais .buttons #Link_Sobre{
+    background-color: burlywood;
+}
+.Dados_Pessoais .buttons #Link_Sobre:hover{
+    background-color: rgb(253, 186, 84);
+}
+
+.Dados_Pessoais .buttons #Link_go{
+    background-color: rgb(55, 175, 55);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.Dados_Pessoais .buttons #Link_go:hover{
+    background-color: rgb(2, 136, 2);
+}
+@media (max-width: 845px){
+    .Dados_Pessoais .field_3 fieldset{
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .Dados_Pessoais .field_3 fieldset .Key_1 p{
+        align-self: flex-end;
+        padding: 0px;
+    }
+    .Dados_Pessoais .field_3 fieldset .aviso_1{
+        margin-top: -50px;
+    }
+}
+@media (max-width: 325px){
+    .Dados_Pessoais .field_3 fieldset .Key_repeat input{
+        width: 140px;
+    }
+}
