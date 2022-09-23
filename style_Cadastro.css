@@ -1,6 +1,19 @@
 /*   Página de Cadastro Users   */
 body{
-    margin: 0 auto;
+    margin: 0px auto;
+}
+
+.Top{
+    background-color: rgb(2, 121, 81);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.Top p{
+    font-family: verdana;
+    color: white;
+    text-align: center;
+    padding: 0 10px;
 }
 
 .Main_Cadastro{
@@ -9,7 +22,7 @@ body{
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -371,6 +384,18 @@ body{
 .Dados_Pessoais .buttons #Link_go:hover{
     background-color: rgb(2, 136, 2);
 }
+
+footer{
+    position: relative;
+}
+.Bottom{
+    background-color: rgb(2, 121, 81);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
 @media (max-width: 845px){
     .Dados_Pessoais .field_3 fieldset{
         flex-direction: row;
